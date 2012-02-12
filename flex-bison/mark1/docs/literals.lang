@@ -1,0 +1,29 @@
+// Integers
+a = 1;
+
+// Floats
+b = 1.0;
+
+// Numbers
+
+
+// Strings
+c = "foo";
+
+// Arrays
+d = [];
+d = [1.0, 2.0, 3.0, 4.0, 5.0];
+
+// Maps
+e = {};
+e = {
+	 "foo1": "bar"
+	,"foo2": 1.0
+	,"foo3": a
+};
+f = e["foo1"];
+
+// Functions
+max a,b =
+	1;
+end

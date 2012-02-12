@@ -1,0 +1,7 @@
+===============================================================================
+Project Goals
+===============================================================================
+This project is a collection of C files and headers that provide common 
+functionality such as typedefs, macros, and debugging utilities. These files 
+are meant to be used by multiple projects.
+

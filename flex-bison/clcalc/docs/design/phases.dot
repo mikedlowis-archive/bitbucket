@@ -1,0 +1,14 @@
+digraph {
+	0 [label="Phase 1: Parse"]
+	1 [label="Phase 2: Translate"]
+	2 [label="Phase 3: Optimize"]
+	3 [label="Phase 4: Assemble"]
+	4 [label="Phase 5: Link"]
+
+	0->1
+	0->0
+	1->2
+	2->3
+	3->4
+	3->0
+}

@@ -1,0 +1,12 @@
+
+CC
+CFLAGS
+
+LEX
+LFLAGS
+
+YACC
+YFLAGS
+
+RM
+

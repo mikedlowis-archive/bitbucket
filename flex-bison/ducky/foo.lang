@@ -1,0 +1,57 @@
+foo = 1
+bar = 1
+1 + 1 
+1.1 + 1
+1.0 + 1.1
+foo + bar
+1 + 2 - 3 / 4 * 5 % 6
+"foo"
+2 * 2 + 1
+2 * (2 + 1)
+
+#1 ** 2
+#2 ** (2 + 1)
+
+if 1 - 1
+	1+1
+end
+
+if foo
+	"foo"
+else
+	"bar"
+end
+
+func add(a,b)
+	a + b
+end
+
+add(41,1)
+print("hello World!")
+
+1 == 1
+#1 != 1
+1 < 1
+1 > 1
+1 <= 1
+1 >= 1
+
+1 && 1
+1 and 1
+
+1 || 1
+1 or 1
+
+!1
+not 1
+
+func fib(n)
+	if n < 2
+		n
+	else
+		fib( n - 1 ) + fib( n - 2 )
+	end
+end
+
+print(fib(10))
+

@@ -1,0 +1,60 @@
+// Variables
+var A
+var B = 0
+A = 1 + 1
+B = A
+
+// If
+if ( 1 == 1 )
+	var C = 1 + 1
+	C = 2
+end
+
+// If-Else
+if ( 1 == 1)
+	var C = 1 + 1
+	C = 2
+else
+	var C = 1 + 1
+	C = 2
+end
+
+// If-ElseIF-Else
+if ( 1 == 1)
+	var C = 1 + 1
+	C = 2
+else if ( 1 == 1 )
+	var C = 1 + 1
+	C = 2
+else
+	var C = 1 + 1
+	C = 2
+end
+
+// Multiple Else-Ifs
+if ( 1 == 1)
+	var C = 1 + 1
+	C = 2
+else if ( 1 == 1 )
+	var C = 1 + 1
+	C = 2
+else if ( 1 == 1 )
+	var C = 1 + 1
+	C = 2
+else
+	var C = 1 + 1
+	C = 2
+end
+
+// While Loop
+while ( 1 == 1 )
+	var C = 1 + 1
+	C = 2
+end
+
+// Functions
+var foo(A,B)
+	var C = A + B
+	return C
+end
+var D = foo(1,2)

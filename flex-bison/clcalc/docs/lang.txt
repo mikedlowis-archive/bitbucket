@@ -1,0 +1,17 @@
+Implement:
+	Numbers
+	Strings
+	Boolean
+	Function
+
+????:
+	Tables
+	List
+	Tuple
+	Dictionary
+
+	Symbols
+	Lists
+	Vectors
+	Maps
+

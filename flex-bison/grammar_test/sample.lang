@@ -1,0 +1,116 @@
+#------------------------------------------------------------------------------
+# Literals
+#------------------------------------------------------------------------------
+# Number Literals
+let a = 1
+let b = -1
+let c = 1.0
+let d = -1.0
+
+# Atom Literals
+let e = :some_atom
+
+# String and Char Literals
+# String
+let f = ""
+let g = "Some string"
+
+# Char
+let h = ''
+let i = 'C'
+
+# Func Literals
+let j = (a,b){}
+
+# Vector Literals
+let k = []
+let l = [0,1,2,3,4]
+let m = [0, 'A', "foo", :bar]
+
+# List Literals
+let p = ()
+let q = (0,1,2,3,4)
+let r = (0, 'A', "foo", :bar)
+
+#------------------------------------------------------------------------------
+# Arithmetic
+#------------------------------------------------------------------------------
+# Addition
+let s =  1 + 1 
+let t =  1 + -1
+let u = -1 + 1
+let v = -1 + -1
+let w =   1+1 
+let x =   1+-1
+let y =  -1+1
+let z =  -1+-1
+
+# Subtraction
+let aa =  1 - 1 
+let ab =  1 - -1
+let ac = -1 - 1
+let ad = -1 - -1
+let ae =   1-1 
+let af =   1--1
+let ag =  -1-1
+let ah =  -1--1
+
+# Multiplication
+let ai =  1 * 1 
+let aj =  1 * -1
+let ak = -1 * 1
+let al = -1 * -1
+let am =   1*1 
+let an =   1*-1
+let ao =  -1*1
+let ap =  -1*-1
+
+# Division
+let aq =  1 / 1 
+let ar =  1 / -1
+let as = -1 / 1
+let at = -1 / -1
+let au =   1/1 
+let av =   1/-1
+let aw =  -1/1
+let ax =  -1/-1
+
+#------------------------------------------------------------------------------
+# Now for the solution to a "real" problem
+#------------------------------------------------------------------------------
+
+#(define (balanced-brackets string)
+#  (define (b chars sum)
+#    (cond ((and (null? chars) (= 0 sum))
+#           #t)
+#          ((null? chars)
+#           #f)
+#          ((char=? #\[ (car chars))
+#           (b (cdr chars) (+ sum 1)))
+#          ((= sum 0)
+#           #f)
+#          (else
+#           (b (cdr chars) (- sum 1)))))
+#  (b (string->list string) 0))
+
+let balanced_brackets = (str) {
+		
+}
+
+#(balanced-brackets "")
+# 
+#(balanced-brackets "[]")
+#(balanced-brackets "[][]")
+#(balanced-brackets "[[][]]")
+# 
+#(balanced-brackets "][")
+#(balanced-brackets "][][")
+#(balanced-brackets "[]][[]")
+
+print( balanced_brackets("") )
+print( balanced_brackets("[]") )
+print( balanced_brackets("[][]") )
+print( balanced_brackets("[[][]]") )
+print( balanced_brackets("][") )
+print( balanced_brackets("][][") )
+print( balanced_brackets("[]][[]") )

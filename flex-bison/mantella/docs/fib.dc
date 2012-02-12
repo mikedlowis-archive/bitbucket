@@ -1,0 +1,28 @@
+#import io
+
+#func recursive_fib(n)
+	#var ret = n
+#	if n >=2
+#		ret = recursive_fib(n-1) + recursive_fib(n-2)
+#	end
+#	return ret
+#end
+
+#func iterative_fib(n)
+	#var i = n
+	#var first = 0
+	#var second = 1
+	#var tmp = 0
+#	while i > 0
+	#	tmp = first + second
+	#	first = second
+	#	second = tmp
+	#	i = i - 1
+#	end
+#	return first
+#end
+
+#func main(args)
+	#puts recursive_fib(10)
+	#puts iterative_fib(10)
+#end
