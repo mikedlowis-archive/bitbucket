@@ -1,0 +1,24 @@
+#------------------------------------------------------------------------------
+# Example rakefile
+#------------------------------------------------------------------------------
+require './spade/spade'
+include Spade::DSL
+
+# setup a common toolchain  for usage
+toolchain :gcc do
+    compiler 'echo gcc' #['c']
+    #compiler 'g++' #['cc', 'cpp']
+    linker   'echo gcc' #['a', 'lib', 'dll' 'o']
+    archiver 'echo ar'  #['o']
+end
+
+# Test out the DSL
+application :foo do
+    build_dir 'build/'
+    toolchain :gcc
+
+    # Add source files
+    source  [ 'source/foo1/**.c', 'source/foo2/**.c' ]
+    source  'source/main.c'
+end
+
